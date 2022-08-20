@@ -22,33 +22,70 @@
       <div class="container">
         <div class="row">
           <div class="col-sm bg-success">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter Name..." /><br />
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter Email..." />
+            <label for="emailA">Email</label>
+            <input type="text" id="emailA" placeholder="Enter Email..." /><br />
+            <label for="nameA">Name</label>
+            <input type="text" id="nameA" placeholder="Enter Name..." />
             <br /><br />
             <button type="button" class="btn btn-info" onclick="postData()">
               Add Customer
             </button>
             <br /> <br />
           </div>
+          <div class="col-sm bg-success">
+            <label for="emailU">Email</label>
+            <input type="text" id="emailU" placeholder="Enter Email..." /><br />
+            <label for="pwdU">Password</label>
+            <input type="text" id="pwdU" placeholder="Enter Password..." />
+            <br /><br />
+            <button type="button" class="btn btn-info" onclick="updateData()">
+              Update Password
+            </button>
+            <br /> <br />
+          </div>
           <div class="col-sm bg-warning">
-            <label for="cid">Customer ID</label>
-            <input type="text" id="cid" placeholder="Enter Customer ID.." /><br />
+            <label for="emailD">Email</label>
+            <input type="text" id="emailD" placeholder="Enter Email..." /><br />
             <br /><br />
             <button type="button" class="btn bg-danger" onclick="deleteData()">
-              Delete
+              Delete Customer
             </button>
             <br /> <br />
           </div>
     
+          <div class="col-sm bg-warning">
+            <label for="emailS">Email</label>
+            <input type="text" id="emailS" placeholder="Enter Email..." /><br />
+            <br /><br />
+            <button type="button" class="btn bg-danger" onclick="searchData()">
+              Search Customer
+            </button>
+            <br /> <br />
+          </div>
+
       </div>
+      <div class="bg-info">
+        <label for="emailL">Email</label>
+        <input type="text" id="emailL" placeholder="Enter Email..." /><br />
+        <label for="pwdL">Password</label>
+        <input type="text" id="pwdL" placeholder="Enter Password..." />
+        <br /><br />
+        <button type="button" class="btn btn-light" onclick="loginToServer()">
+          Login
+        </button>
+        <br /> <br />
+      </div>      
       <div class="bg-info">
         <button type="button" class="btn btn-light" onclick="getFromServer()">
           View All
         </button>
+        <br /> <br />        
       </div>
+     
     </form>
-    <div id="mypanel">   </div>
+    <div id="mypanel">  
+      
+    
+    </div>
   </body>
 </html>
